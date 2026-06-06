@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CVR College of Engineering</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://i.pinimg.com/736x/cc/9b/be/cc9bbe385309a5ee04fa0a305cbd01cf.jpg"
+                 width="40" height="40">
+            CVR College of Engineering
+        </a>
+    </div>
+</nav>
+
+<!-- Login Form -->
+<section class="container py-5">
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Student Login</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form id="loginForm">
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Enter Email"
+                                   required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Password
+                            </label>
+
+                            <input type="password"
+                                   class="form-control"
+                                   placeholder="Enter Password"
+                                   required>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox"
+                                   class="form-check-input">
+
+                            <label class="form-check-label">
+                                Remember Me
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-primary w-100">
+                            Login
+                        </button>
+
+                    </form>
+
+                    <div class="text-center mt-3">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        New Student?
+                        <a href="registration.html">
+                            Register Here
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Login Success Modal -->
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">
+                    Login Successful
+                </h5>
+
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                Welcome to CVR College of Engineering Portal.
+            </div>
+
+            <div class="modal-footer">
+                <a href="index.html"
+                   class="btn btn-success">
+                    Go to Home
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <p class="mb-0">
+        © 2026 CVR College of Engineering
+    </p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById("loginForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    var myModal = new bootstrap.Modal(
+        document.getElementById('loginModal')
+    );
+
+    myModal.show();
+});
+</script>
+
+</body>
+</html>

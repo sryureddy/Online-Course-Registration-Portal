@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/736x/cc/9b/be/cc9bbe385309a5ee04fa0a305cbd01cf.jpg" width="40" height="40" alt="">
+                    CVR College Of Engineering
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+<a href="login.html" class="btn btn-light">
+    Login
+</a>
+                    <li class="nav-item ms-2">
+                     
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold">Skill Academy</h1>
+                    <h4 class="text-primary">Learn Today, Lead Tomorrow</h4>
+
+                    <p class="lead">
+                        Explore industry-focused courses designed to help
+                        students gain practical skills and career opportunities.
+                    </p>
+
+                    <a href="courses.html" class="btn btn-primary btn-lg">
+                        Explore Courses
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/banner.jpg" class="img-fluid rounded" alt="Banner">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Courses</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/webdev.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Web Development</h5>
+                            <p>Duration: 3 Months</p>
+                            <p>Fee: ₹15,000</p>
+                            <button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#webDevModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/python.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Python Programming</h5>
+                            <p>Duration: 2 Months</p>
+                            <p>Fee: ₹12,000</p>
+<button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#pythonModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/datascience.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Data Science</h5>
+                            <p>Duration: 4 Months</p>
+                            <p>Fee: ₹20,000</p>
+<button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#dataModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/ai.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>AI & ML</h5>
+                            <p>Duration: 5 Months</p>
+                            <p>Fee: ₹25,000</p>
+<button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#aiModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/java.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Java Programming</h5>
+                            <p>Duration: 3 Months</p>
+                            <p>Fee: ₹15,000</p>
+<button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#javaModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/cloud.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Cloud Computing</h5>
+                            <p>Duration: 4 Months</p>
+                            <p>Fee: ₹18,000</p>
+<button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#cloudModal">
+    View Details
+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Student Testimonials</h2>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Excellent training and faculty support."</p>
+                        <h6>- Rahul</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Helped me get my first internship."</p>
+                        <h6>- Priya</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Practical learning with real projects."</p>
+                        <h6>- Kiran</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Address: Hyderabad, Telangana</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Email: info@skillacademy.com</p>
+
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="#" class="text-white me-3">Instagram</a>
+            <a href="#" class="text-white">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Web Development Modal -->
+<div class="modal fade" id="webDevModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Web Development Course</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Course Duration</h6>
+                <p>3 Months</p>
+
+                <h6>Course Fee</h6>
+                <p>₹15,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap 5</li>
+                    <li>JavaScript</li>
+                    <li>React Basics</li>
+                </ul>
+
+                <h6>Outcome</h6>
+                <p>
+                    Build responsive websites and modern web applications.
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html"
+                   class="btn btn-success">
+                    Enroll Now
+                </a>
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="pythonModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Python Programming</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>2 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹12,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>Python Basics</li>
+                    <li>OOP Concepts</li>
+                    <li>File Handling</li>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="dataModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Data Science</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>4 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹20,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>Python for Data Science</li>
+                    <li>Data Analysis</li>
+                    <li>Pandas & NumPy</li>
+                    <li>Data Visualization</li>
+                    <li>Machine Learning Basics</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="aiModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">AI & Machine Learning</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>5 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹25,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Neural Networks</li>
+                    <li>Computer Vision</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="javaModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Java Programming</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>3 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹15,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>Core Java</li>
+                    <li>OOP Concepts</li>
+                    <li>Collections Framework</li>
+                    <li>Exception Handling</li>
+                    <li>JDBC</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="cloudModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Cloud Computing</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>4 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹18,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>AWS Fundamentals</li>
+                    <li>Microsoft Azure</li>
+                    <li>Cloud Storage</li>
+                    <li>Virtual Machines</li>
+                    <li>Cloud Security</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="cloudModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Cloud Computing</h5>
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Duration</h6>
+                <p>4 Months</p>
+
+                <h6>Fee</h6>
+                <p>₹18,000</p>
+
+                <h6>Topics Covered</h6>
+                <ul>
+                    <li>AWS Fundamentals</li>
+                    <li>Microsoft Azure</li>
+                    <li>Cloud Storage</li>
+                    <li>Virtual Machines</li>
+                    <li>Cloud Security</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="registration.html" class="btn btn-success">
+                    Enroll Now
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
